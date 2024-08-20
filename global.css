@@ -1,0 +1,149 @@
+/* блять шрифти Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+
+body {
+    font-family: 'Open Sans', Arial, sans-serif;
+    background-color: #f9f9f9; /* Легкий сірий для фону */
+    color: #333; /* Темно-сірий для тексту */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #2c3e50; /* Темно-синій для заголовка */
+    color: #ecf0f1; /* Світло-сірий для тексту */
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    font-weight: 700; /* Жирний шрифт для заголовка */
+    letter-spacing: 1px;
+    font-family: 'Roboto', sans-serif;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #34495e; /* Середньо-синій для навігації */
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #ecf0f1; /* Світло-сірий для тексту */
+    text-decoration: none;
+    font-weight: 500; /* Напівжирний шрифт для навігаційних посилань */
+    padding: 10px 15px;
+    display: block;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-family: 'Roboto', sans-serif;
+}
+ul li img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+ul li img:hover {
+    transform: scale(1.05);
+}
+
+nav ul li a:hover {
+    background-color: #2980b9;
+    color: #fff;
+}
+
+main {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+main h2 {
+    color: #2c3e50;
+    font-size: 2.2em;
+    margin-bottom: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-weight: 600;
+    font-family: 'Roboto', sans-serif;
+}
+
+section {
+    background-color: #fff;
+    padding: 30px;
+    margin: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    transition: box-shadow 0.3s ease;
+}
+
+section:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+iframe {
+    width: 100%;
+    max-width: 100%;
+    height: 510px;
+    margin: 20px 0;
+    display: block;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    text-align: center;
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    padding: 20px 10px;
+    position: sticky;
+    bottom: 0;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 0.9em;
+    font-family: 'Open Sans', sans-serif;
+}
+
+@media (max-width: 768px) { /* Це для того щоб сайт на мобільних екранах був норм, незнаю на хуя можеш видаляти*/
+    nav ul {
+        flex-direction: column;
+        background-color: #34495e;
+    }
+
+    nav ul li {
+        margin: 0;
+        border-bottom: 1px solid #2c3e50;
+    }
+
+    nav ul li a {
+        padding: 10px 0;
+    }
+
+    main {
+        padding: 20px;
+    }
+
+    section {
+        margin: 15px 0;
+    }
+
+    footer {
+        padding: 15px;
+    }
+}
